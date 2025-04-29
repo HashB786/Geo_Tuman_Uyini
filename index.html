@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geo classtest</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="position: relative;">
+
+    <div class="page" id="Main" style="filter: blur(5px); z-index: 1; position: absolute;">
+        <h1 id="Question">Tuman:</h1>
+        <select id="EnterAnswer" name="SelRegion" ></select>
+        <h1 id="Answer">...</h1>
+        <button id="Confirm" onclick="check()">Topshirish</button>
+        <button id="Another" onclick="GenerateQuestion()">Boshqa</button>
+    </div>
+
+
+
+    <div class="page" id="Starter" style="z-index: 2; position: absolute;">
+        <h1>Tuman O'yini</h1>
+        <input type="text" placeholder="Type password..." id="input">
+        <button id="con">confirm</button>
+    </div>
+    
+
+
+    <script src="index.js" type="module" defer ></script>
+    <script src="startpagejs.js" type="module" defer ></script>
+</body>
+</html>
